@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "outfit", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --main-color-blackpurple: #8500F9;
+  --main-color-pink: #E50BBD;
+  --main-color-purple: #BB00F9;
+  --main-color-blue: #47089F;
+  --main-color-chartreuse: #74D300;
+  --main-color-green: #CEF22D;
+  --main-color-lightgreen: #F2FFB8;
+  --main-color-red: #E21E5C;
+  --main-color-lightred: #FF78A3;
+  --main-color-border1: #AA00F9;
+  --main-color-border2: #FD6EFF;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+}
+
+.RuleWithText {
+  align-items: center;
+  color: #4b4b4b;
+  display: flex;
+  font-size: 17px;
+  font-weight: 300;
+  gap: .5em;
+  line-height: 23px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+
+/* ====== EL-BUTTON ====== */
+.el-button {
+
+  transition: 0.3s;
+}
+
+.el-button:hover,
+.el-button:focus {
+  background-color: var(--main-color-purple);
+  color: #fff;
+  border-color: var(--main-color-purple);
+}
+
+/* ====== EL-CARD ====== */
+.el-card {
+  border: 1px solid rgba(187, 0, 249, 0.2);
+  box-shadow: 0 2px 8px rgba(187, 0, 249, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.el-card:hover {
+  box-shadow: 0 4px 12px rgba(187, 0, 249, 0.2);
+}
+
+/* ====== EL-PAGINATION ====== */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: var(--main-color-purple);
+  color: #fff;
+}
+
+.el-pagination .el-pager li:hover {
+  color: var(--main-color-purple);
+}
+
+.el-pagination .el-pager li.is-active {
+  color: var(--main-color-purple);
+}
+
+.el-pagination button:hover {
+  color: var(--main-color-purple);
+}
+
+/* ====== EL-RADIO ====== */
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: var(--main-color-purple);
+  background-color: var(--main-color-purple);
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: var(--main-color-purple);
+}
+
+.el-radio__inner:hover {
+  border-color: var(--main-color-purple);
+}
+
+/* ====== EL-CHECKBOX ====== */
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: var(--main-color-purple);
+  border-color: var(--main-color-purple);
+}
+
+.el-checkbox__inner:hover {
+  border-color: var(--main-color-purple);
+}
+
+.el-checkbox__label {
+  transition: color 0.3s;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: var(--main-color-purple);
+}
+
+
+#app {
+  margin: 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/*button {*/
+/*  border-radius: 8px;*/
+/*  border: 1px solid transparent;*/
+/*  padding: 0.6em 1.2em;*/
+/*  font-size: 1em;*/
+/*  font-weight: 500;*/
+/*  font-family: inherit;*/
+/*  background-color: #1a1a1a;*/
+/*  cursor: pointer;*/
+/*  transition: border-color 0.25s;*/
+/*}*/
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
