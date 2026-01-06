@@ -1,5 +1,12 @@
-# Vue 3 + TypeScript + Vite
+## Đây là file Artwork Website
+Front-End project build with **Vue 3 + TypeScript + Vite**, file này do tbm làm nhưng quên ko commit với máy sắp hết dung lượng nên up lên cho đỡ tốn dung lượng.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Setup
+```bash
+  npm install
+```
+```bash
+  npm run dev
+```
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Xong ngồi đợi tí cho nó chạy, xong bấm vào localhost
